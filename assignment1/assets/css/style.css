@@ -1,212 +1,330 @@
-body {
-	background: url("../images/concrete_seamless.png");
-	font-size: 18px;
-	line-height: 34px;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #777;
-}
-
 * {
-	box-sizing: border-box;
-}
-
-/*sticky footer stuff*/
-/*http://ryanfait.com/html5-sticky-footer/*/
-
-* {
-	margin: 0;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          
 }
 
 html, body {
 	height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+
+}
+
+h2 {
+	color: #4aaaa5;
+	font-size: 28px;
+	line-height: 1.25;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+h4 {
+	color: #4aaaa5;
+	font-size: 22px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+hr {
+
+	border: 1px solid #DDDDDD;
+	margin-bottom: 22px;
+}
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/pixel_weave-bg.png");
+	margin: 0;
+	padding: 0;     
+}
+
 .wrapper {
 	min-height: 100%;
-	height: auto !important; 
-	height: 100%;
-	margin: 0 auto -105px; 
-}
-footer, .push {
-	height: 105px; 
-}
-/*end sticky footer stuff*/
-
-/*start hover stuff*/
-#logo:hover,
-input[type=submit]:hover {
-	background: #5E7F7E;
-}
-nav a:hover {
-	color: #5E7F7E;
-}
-.social:hover {
-	opacity: .8;
-	cursor: pointer;
+	margin: 0 auto -90px;
 }
 
-/*general*/
-
-.container {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	clear: both;
-}
-h1, 
-h2,
-h3,
 p {
-	margin-bottom: 20px;
-}
-p:last-child {
-	margin-bottom: 0;
-}
-h1, h2, h3 {
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-weight: 700;
-	color: #4aaaa5;
-}
-h1 {
-	font-size: 30px;
-	line-height: 49px;
-	border-bottom: 3px solid #ddd;
-	padding-bottom: 20px;
-}
-h2,
-h3 {
-	font-size: 22px;
-}
-
-/*header*/
-
-#masthead {
-	background: #fff;
-	margin: 0 0 30px;
-	z-index: 99;
-	color: #fff;
-	overflow: auto;
-	border-bottom: 2px solid #ccc;
-	position: fixed;
-	width: 100%;
-}
-#logo {
-	width: 250px;
-	height: 90px;
-	background: #4aaaa5;
-	float: left;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	text-align: center;
-	line-height: 90px;
-	color: #fff;
-	font-weight: 700;
-	font-size: 30px;
-	text-decoration: none;
-}
-nav {
-	float: right;
-	margin-top: 25px;
-}
-nav a {
-	color: #999;
-	text-decoration: none;
-	margin-left: 15px;
-	display: inline-block;
-	border-left: 1px solid #efefef;
-	padding-left: 15px;
-	line-height: 18px;
-}
-nav a:first-child {
-	border-left: 0 none;
-}
-
-/*footer*/
-
-footer {
-	background: #666;
-	color: #fff;
-	padding: 30px 0;
-	clear: both;
-	border-top: 8px solid #4aaaa5;
-	color: #ccc;
-	font-size: 12px;
-	text-align: center;
-}
-
-/*sidebar*/
-
-.sidebar {
-	background: #fff;
-	padding: 30px;
-	width: 100%;
-	max-width: 270px;
-	float: right;
-	border: 1px solid #ddd;
-	margin-bottom: 20px;
-}
-h3,
-.sidebar h2 {
-	border-bottom: 2px solid #eee;
-	padding-bottom: 20px;
-	margin-bottom: 15px;
-	line-height: 22px;
-}
-.social {
-	width: 62px;
-	height: 62px;
-	margin-top: 8px;
-	margin-right: 5px;
-}
-.social:last-child {
-	margin-right: 0;
-}
-
-/*main*/
-
-#main-container {
-	padding-top: 130px;
-}
-.main-section {
-	background: #fff;
-	padding: 30px;
-	margin: 0 0 40px 0;
-	width: 100%;
-	max-width: 650px;
-	float: left;
-	border: 1px solid #ddd;
-}
-
-/*contact page*/
-
-#contact-form ul {
-	margin-bottom: 20px;
-}
-#contact-form li {
+	color: #777777;
+	line-height: 2;
 	margin-bottom: 10px;
+	margin-top: 0px;
+	font-size: 16px;
 }
-label,
-input[type=text],
-input[type=email],
-textarea {
-	display: block;
+
+/****  Header  ****/
+
+header {
 	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #CFCFCF;
+	height: 90px;
+	clear: both;
+	margin-bottom: 35px;
 }
-input[type=text],
-input[type=email],
-textarea {
-	height: 35px;
-	border: 1px solid #ddd;
-	padding: 0 10px;
-	font-size: 14px;
+
+#nameWrap {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 960px;
 }
-textarea {
-	height: 200px;
-}
-input[type=submit] {
+
+#myName {
 	background: #4aaaa5;
-	border: 0 none;
 	color: #fff;
+	width: 250px;
+	padding: 30px 0 30px 0;
+	text-align:center;
+	float: left;
+	height: 90px;
+}
+
+.nav {
+	float: right;
+	margin-top: 35px;
 	font-size: 18px;
-	padding: 10px 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #777777;
+  display: block;
+  padding: 0 10px;
+  border-right: 1px solid #DDDDDD;
+  
+}
+
+.nav li:last-child a {
+	padding-right: 0px;
+	border-right: none;
+	
+}
+
+.nav a:hover {
+	color:#FF5700;
+}
+
+.nav li {
+    display: inline-block;
+    
+    
+ }
+
+.nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+#profilePic {
+	width: 190px;
+	height: 190px;
+	border-radius: 5px;
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.4);
+
+}
+
+#thicker {
+	border: 2px solid #DDDDDD;
+	margin-bottom: 22px;
+}
+
+
+
+.socialIcon {
+	width: 60px;
+	height: 60px;
+}
+
+.socialBtns a {
+	margin-right: 8px;
+}
+
+.socialBtns a:last-child {
+	margin-right: 0px;
+}
+
+.socialBtns a:hover {
+	-webkit-filter: opacity(70%);
+}
+
+
+/* Main Content Containers */
+
+section {
+	padding: 30px;
+	background: #fff;
+	border: 1px solid #DDDDDD;
+}
+
+.main {
+	max-width: 650px;
+	width: 650px;
+	float: left;
+}
+
+.rightArea {
+	width: 270px;
+	float: right;
+}
+
+.content {
+	padding: 0;
+	max-width: 960px;
+	margin: 0px auto 0px;
+}
+
+/* Contact Form Elements */
+
+form label {
+	color: #777777;
+	display: block;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+form input {
+	width: 100%;
+	height: 35px;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #777777;
+	padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #CCCCCC;
+}
+
+form textarea {
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	height: 200px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #777777;
+	padding: 10px 0px 0px 10px;
+	line-height: 21px;
+}
+
+#formBtn {
+	background: #4aaaa5;
+	color: #fff;
+	text-align:center;
+	width: 115px;
+	height: 40px;
+	font-size: 18px;
+	border: none;
 	cursor: pointer;
+}
+
+#formBtn:hover {
+	background: #FF5700;
+}
+
+
+/* Portfolio Images */
+
+.portfolioPicLeft {
+	width: 275px;
+	height: 205px;
+	float: left;
+	margin-bottom: 55px;
+	background-size: cover;
+  	position: relative;
+  	display: inline;
+}
+
+.portfolioPicRight {
+	width: 275px;
+	height: 205px;
+	float: right;
+	margin-bottom: 55px;
+	background-size: cover;
+  	position: relative;
+  	display: inline;
+}
+
+.last {
+	margin-bottom: 0px;
+}
+
+.top {
+	margin-top: 20px;
+}
+
+.tiger {
+	background-image: url(../images/tiger.jpg);
+	
+}
+
+.cycling {
+	background-image: url(../images/cycling.jpg);
+}
+
+.mini-cooper {
+	background-image: url(../images/mini-cooper.jpg);
+}
+
+.peppers {
+	background-image: url(../images/peppers.jpg);
+}
+
+.rhino {
+	background-image: url(../images/rhinoceros.jpg);
+}
+
+.swimming {
+	background-image: url(../images/swimming.jpg);
+}
+
+.imgText {
+	font-size: 24px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background: #4aaaa5;
+	color: #FFFFFF;
+	font-weight: normal;
+	height: 60px;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	position: absolute;
+}
+
+
+/* Footer Styles */
+
+.footer {
+	width: 100%;
+	background: #666666;
+	border-top: 10px solid #4aaaa5;
+	height: 90px;
+	clear: both;
+	margin-top: 35px;
+}
+
+#footerText {
+	text-align: center;
+	font-size: 12px;
+	color: #DDDDDD;
+	padding-top: 30px;
+}
+
+.footer, .push {
+height: 90px;
+clear: both;
 }
